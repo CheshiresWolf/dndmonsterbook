@@ -1,0 +1,36 @@
+"#searchText" : {
+	left : 0,
+	top : 0,
+	width : "100%",
+	height : 50
+}
+"#resultsCounter" : {
+	left : 0,
+	top : 50,
+	width : "100%",
+	height : 50
+}
+"#search" : {
+	left : 0,
+	top : 100,
+	width : "100%",
+	height : 50
+}
+"#favoriteReset" : {
+	left : 0,
+	top : 0,
+	width : "100%",
+	height : 50
+}
+"#resetText" : {
+	left : 0,
+	bottom : 0,
+	width : "100%",
+	height : 50,
+	font : {
+        fontSize : "10pt",
+		fontFamily : 'Deutsch-Gothic'
+	},
+	color : "white",
+	textAlign : "center"
+}

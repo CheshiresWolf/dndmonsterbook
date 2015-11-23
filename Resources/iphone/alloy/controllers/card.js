@@ -36,15 +36,16 @@ function Controller() {
     var exports = {};
     var __defers = {};
     $.__views.cardWindow = Ti.UI.createWindow({
+        backgroundColor: "#fff",
         backgroundImage: "/images/MainWin/parchment2.jpg",
         modal: "true",
         id: "cardWindow"
     });
     $.__views.cardWindow && $.addTopLevelView($.__views.cardWindow);
-    $.__views.__alloyId0 = Ti.UI.createScrollView({
-        id: "__alloyId0"
+    $.__views.__alloyId18 = Ti.UI.createScrollView({
+        id: "__alloyId18"
     });
-    $.__views.cardWindow.add($.__views.__alloyId0);
+    $.__views.cardWindow.add($.__views.__alloyId18);
     $.__views.statBox = Ti.UI.createView({
         top: 70,
         left: "11%",
@@ -53,7 +54,7 @@ function Controller() {
         backgroundImage: "/images/MainWin/stat.png",
         id: "statBox"
     });
-    $.__views.__alloyId0.add($.__views.statBox);
+    $.__views.__alloyId18.add($.__views.statBox);
     $.__views.armorclass = Ti.UI.createLabel({
         textAlign: "center",
         top: 0,
@@ -252,7 +253,7 @@ function Controller() {
         layout: "vertical",
         id: "anotherBox"
     });
-    $.__views.__alloyId0.add($.__views.anotherBox);
+    $.__views.__alloyId18.add($.__views.anotherBox);
     $.__views.topBox = Ti.UI.createView({
         top: 0,
         left: 0,

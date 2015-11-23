@@ -1,0 +1,11 @@
+<Alloy>
+    <View backgroundColor="#343535">
+    	<!--Label id="searchTitle">Enter name of </Label>
+        <TextField id="searchText"></TextField>
+        <Label id="resultsCounter"></Label>
+        <Button id="search" onClick="search" title="Reset Favorites"></Button-->
+
+        <Button id="favoriteReset" onClick="favoriteReset" title="Reset Favorites"></Button>
+        <Label id="resetText"></Label>
+    </View>
+</Alloy>

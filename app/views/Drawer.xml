@@ -1,0 +1,13 @@
+<Alloy>
+    <Widget id="drawer" src="nl.fokkezb.drawer">
+        <View role="leftWindow">
+            <Require id="menu" src="Menu" />
+        </View>
+        <NavigationWindow role="centerWindow" navBarHidden="true" platform="ios">
+            <Require id="root" src="MainWin" />
+        </NavigationWindow>
+        <View role="centerWindow" navBarHidden="true" platform="android">
+            <Require id="root" src="MainWin" />
+        </View>
+    </Widget>
+</Alloy>

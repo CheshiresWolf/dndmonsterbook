@@ -19,8 +19,10 @@ function FavoritesList() {
         self.save();
     };
     self.clean = function() {
+        var length = self.collection.length;
         self.collection.reset();
         self.save();
+        return length;
     };
     self.refresh = function() {
         self.collection.reset(self.load());
