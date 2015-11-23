@@ -1,0 +1,132 @@
+"#container[platform=android]" : {
+	backgroundColor : "#343535"
+}
+"#container[platform=ios]" : {
+	top : 20,
+	backgroundColor : "white"
+}
+"#controls" : {
+	top : 0,
+	left : 0,
+	width  : Ti.UI.FILL,
+	height : 40,
+	layout : "horizontal"
+}
+"#listButton" : {
+	top : 5,
+	left : "8%",
+	width  : "28%",
+	height : 30,
+	color : "black",
+	backgroundImage : "/images/MainWin/lb_on.png"
+}
+"#filterButton" : {
+	top : 5,
+	left : 0,
+	width  : "28%",
+	height : 30,
+	color : "black",
+	backgroundImage : "/images/MainWin/lf_off.png"
+}
+"#favouriteButton" : {
+	top : 5,
+	left : 0,
+	width  : "28%",
+	height : 30,
+	color : "black",
+	backgroundImage : "/images/MainWin/ls_off.png"
+}
+"#listView" : {
+	top : 40,
+	left : 0
+}
+"#filterView" : {
+	top : 40,
+	left : 0,
+	right : 0,
+	bottom : 0,
+	visible : false
+}
+"#favoriteListView" : {
+	top : 40,
+	left : 0,
+	visible : false
+}
+"#title[platform=android]" : {
+	font : {
+        fontSize : "16pt",
+		fontFamily : 'Deutsch-Gothic'
+	},
+	color : "white",
+	textAlign : "center"
+}
+"#title[platform=ios]" : {
+	font : {
+        fontSize : "16pt",
+		fontFamily : 'Deutsch-Gothic'
+	},
+	color : "black",
+	textAlign : "center"
+}
+"#challenge" : {
+	top : 5,
+	right : 5,
+	font : {
+        fontSize : '8pt',
+		fontFamily : 'Deutsch-Gothic'
+	},
+	color : "red",
+	textAlign : "right"
+}
+"#searchApply" : {
+	left : 5,
+	bottom : 5,
+	width : "49%",
+	height : 50
+}
+"#searchReset" : {
+	right : 5,
+	bottom : 5,
+	width : "49%",
+	height : 50
+}
+"#searchResults[platform=android]" : {
+	height : 40,
+	bottom : 40,
+	font : {
+        fontSize : "8pt",
+		fontFamily : 'Deutsch-Gothic'
+	},
+	color : "white",
+	textAlign : "center"
+}
+"#searchResults[platform=ios]" : {
+	height : 40,
+	bottom : 40,
+	font : {
+        fontSize : "8pt",
+		fontFamily : 'Deutsch-Gothic'
+	},
+	color : "black",
+	textAlign : "center"
+}
+"#searchAC" : {
+	top : 10,
+	width : 250,
+	height : 50
+}
+"#searchChallenge" : {
+	top : 70,
+	width : 250,
+	height : 50
+}
+"#searchAligment" : {
+	top : 130,
+	width : 250,
+	height : 50
+}
+"#searchType" : {
+	top : 190,
+	width : 250,
+	height : 50
+}

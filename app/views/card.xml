@@ -1,0 +1,36 @@
+<Alloy>
+	<Window modal="true" id="cardWindow">
+        <ScrollView>
+	        <View id="statBox">
+		        <Label id="armorclass"></Label>
+		        <Label id="hitpoints"></Label>
+
+	        	<View id="statLabels">
+		        	<Label id="statLabels_str" class="stats">Str</Label>
+		        	<Label id="statLabels_dex" class="stats">Dex</Label>
+		        	<Label id="statLabels_con" class="stats">Con</Label>
+		        	<Label id="statLabels_int" class="stats">Int</Label>
+		        	<Label id="statLabels_wis" class="stats">Wis</Label>
+		        	<Label id="statLabels_cha" class="stats">Cha</Label>
+		        </View>
+		        <View id="statValues">
+		        	<Label id="statValues_str" class="stats">0</Label>
+		        	<Label id="statValues_dex" class="stats">0</Label>
+		        	<Label id="statValues_con" class="stats">0</Label>
+		        	<Label id="statValues_int" class="stats">0</Label>
+		        	<Label id="statValues_wis" class="stats">0</Label>
+		        	<Label id="statValues_cha" class="stats">0</Label>
+		        </View>
+	        </View>
+
+	        <View id="anotherBox"></View>
+	    </ScrollView>
+
+	    <View id="topBox">
+        	<Label id="name"></Label>
+	        <Label id="challenge"></Label>
+
+        	<Button id="star" onClick="setFavourite"></Button>
+	    </View>
+    </Window>
+</Alloy>
