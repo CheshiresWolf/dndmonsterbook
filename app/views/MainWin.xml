@@ -2,15 +2,15 @@
 	<Window backgroundColor="white" id="mainWindow" navBarHidden="true">
         <View id="container">
 	        <View id="controls">
-	        	<Button id="listButton" title="List" onClick="chooseAll"></Button>
-	        	<Button id="filterButton" title="Filter" onClick="chooseFilter"></Button>
-	        	<Button id="favouriteButton" title="Favorite" onClick="chooseFavorite"></Button>
+	        	<View id="buttonsContainer">
+	        		<Button id="listButton" title="List" onClick="chooseAll" class="controlButton" backgroundImage="/images/MainWin/lb_on.png"></Button>
+		        	<Button id="filterButton" title="Filter" onClick="chooseFilter" class="controlButton" backgroundImage="/images/MainWin/lf_off.png"></Button>
+		        	<Button id="favouriteButton" title="Favorite" onClick="chooseFavorite" class="controlButton" backgroundImage="/images/MainWin/ls_off.png"></Button>
+		        </View>
 
+		        <TextField id="searchField"></TextField>
+	        	
 	        	<Button id="searchButton" onClick="search"></Button>
-	        </View>
-
-	        <View id="searchContainer">
-	        	<TextField id="searchField"></TextField>
 	        </View>
 	      
 	    	<ListView id="listView" defaultItemTemplate="defaultTemplate" allowsSelection="true" onItemclick="listClick">

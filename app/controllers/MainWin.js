@@ -267,8 +267,8 @@ function resetFilter() {
 }
 
 function search() {
-	var isVisible = $.searchContainer.visible;
-	$.searchContainer.visible = !isVisible;
+	var isVisible = $.searchField.visible;
+	$.searchField.visible = !isVisible;
 
 	if (!isVisible) {
 		$.searchField.focus();
