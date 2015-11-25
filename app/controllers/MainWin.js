@@ -1,4 +1,5 @@
 var ListViewBinder = require("ListViewBinder");
+var SearchBar = require("SearchBar");
 
 var args = arguments[0] || {};
 
@@ -32,6 +33,22 @@ $.favoriteBinder = new ListViewBinder({
 });
 $.favoriteBinder.bind();
 FavoritesList.refresh();
+
+SearchBar.init({
+	textField : $.searchField,
+	button : $.searchButton,
+	callback : function(e) {
+		// if (e != "") {
+			var customFilter = defaultFilter;
+			customFilter.where.name = {like : e};
+
+			if (DEBUG) Ti.API.debug("MainWin | SearchBar.callback | customFilter : ", customFilter);
+
+			$.collection.initialize((e != "") ? customFilter : defaultFilter);
+		// }
+			$.collection.reload();
+	}
+});
 
 function showMenu() {
 	Alloy.Globals.drawer.toggleLeftWindow();
@@ -265,7 +282,7 @@ function resetFilter() {
 
 	applyFilter();
 }
-
+/*
 function search() {
 	var isVisible = $.searchField.visible;
 	$.searchField.visible = !isVisible;
@@ -277,7 +294,7 @@ function search() {
 		$.searchField.value = "";
 	}
 }
-
+*/
 if (Ti.Platform.osname == "android") {
 	$.mainWindow.addEventListener('open', function(e) {
 	    $.mainWindow.activity.actionBar.hide();

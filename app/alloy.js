@@ -69,7 +69,17 @@ Alloy.Globals.filter = function(params) {
 			var buf = false;
 
 			for (var key in params.where) {
-				buf = ( (item[key] != undefined) && (item[key] == params.where[key]) );
+				if (item[key] != undefined) {
+					if (typeof(params.where[key]) == "String") {
+						buf = (item[key] == params.where[key]);
+					} else {
+						if (params.where[key].like != undefined) {
+							var expr = new RegExp(params.where[key].like, 'i');
+
+							buf = ((item[key]).search(expr) != -1);
+						}
+					}
+				}
 			}
 
 			if (buf) res.push(item);

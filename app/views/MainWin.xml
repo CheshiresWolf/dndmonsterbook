@@ -10,7 +10,7 @@
 
 		        <TextField id="searchField"></TextField>
 	        	
-	        	<Button id="searchButton" onClick="search"></Button>
+	        	<Button id="searchButton"></Button>
 	        </View>
 	      
 	    	<ListView id="listView" defaultItemTemplate="defaultTemplate" allowsSelection="true" onItemclick="listClick">
